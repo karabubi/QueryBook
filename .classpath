@@ -32,5 +32,6 @@
 	<classpathentry kind="lib" path="C:/Users/Saleh/Downloads/javaTool/apache-tomcat-7.0.61 (1).zip"/>
 	<classpathentry kind="lib" path="C:/Users/Saleh/Downloads/configurator-maven-plugin-1.0-sources.jar.zip"/>
 	<classpathentry kind="lib" path="C:/Users/Saleh/Desktop/java-SPARQL/log4j-1.2.16.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jena lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

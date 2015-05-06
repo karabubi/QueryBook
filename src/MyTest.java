@@ -12,14 +12,14 @@ public class MyTest {
 
 	public static void main(String[] args) {
 //		System.out.print("enter name: " );
-//		Scanner keyboard = new Scanner(System.in);
+//	Scanner keyboard = new Scanner(System.in);
 //		String name = keyboard.nextLine();
 //		System.out.println("name: " + name);
-		
+//		
       
         
-        String s2 = 
-        		
+        String s2 = "PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> \n" +
+        		"PREFIX dbpprop: <http://dbpedia.org/property/> \n" +       		
         		"PREFIX  g:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n" +
                         "PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                         "PREFIX  ontology: <http://dbpedia.org/ontology/>\n" +
@@ -32,7 +32,7 @@ public class MyTest {
 "  ?author dbpprop:name ?name " +
 "  FILTER regex(?name, \"Agatha Christie\", \"i\") " +
 "}";
-        System.out.println("debug s2: >>>>>\n" + s2 + "\n<<<<<<");
+       // System.out.println("debug s2: >>>>>\n" + s2 + "\n<<<<<<");
 
         Query query = QueryFactory.create(s2); //s2 = the query above
         QueryExecution qExe = QueryExecutionFactory.sparqlService( "http://dbpedia.org/sparql", query );
